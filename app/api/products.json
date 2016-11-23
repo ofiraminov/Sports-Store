@@ -5,70 +5,80 @@
             "name": "Basket",
             "description": "Professional basket for playing outdoor with your friends",
             "price": 1299,
-            "imgUrl": "basket2.gif"
+            "imgUrl": "basket2.gif",
+            "creationDate": "23/11/2016"
         },
         {
             "id": 12,
             "name": "Basket2",
             "description": "Semi-Professional basket for playing outdoor with your friends",
             "price": 599,
-            "imgUrl": "basket.gif"
+            "imgUrl": "basket.gif",
+            "creationDate": "23/11/2016"
         },
         {
             "id": 13,
             "name": "BasketBall",
             "description": "Spalding TF-33 Professional basketball",
             "price": 199,
-            "imgUrl": "basketBall.gif"
+            "imgUrl": "basketBall.gif",
+            "creationDate": "23/11/2016"
         },
         {
             "id": 14,
             "name": "BasketBall2",
             "description": "Molten 365 Professional basketball",
             "price": 99,
-            "imgUrl": "basketBall2.gif"
+            "imgUrl": "basketBall2.gif",
+            "creationDate": "23/11/2016"
         },
         {
             "id": 15,
             "name": "BasketNet",
             "description": "Net for any basket outdoor and indoor",
             "price": 39,
-            "imgUrl": "basketNet.gif"
+            "imgUrl": "basketNet.gif",
+            "creationDate": "23/11/2016"
         },
         {
             "id": 16,
             "name": "TennisRacket",
             "description": "Professional Wilson Tennis Racket to fit your practices and competitions",
             "price": 599,
-            "imgUrl": "tennisRacket.gif"
+            "imgUrl": "tennisRacket.gif",
+            "creationDate": "23/11/2016"
         },
         {
             "id": 17,
             "name": "TennisRacket2",
             "description": "Professional Penn Tennis Racket to fit your practices and competitions",
             "price": 499,
-            "imgUrl": "tennisRacket2.gif"
+            "imgUrl": "tennisRacket2.gif",
+            "creationDate": "23/11/2016"
         },
         {
             "id": 18,
             "name": "PingPongRacket",
             "description": "Professional Ping Pong Racket to fit your practices and competitions",
             "price": 499,
-            "imgUrl": "pingPongRacket.gif"
+            "imgUrl": "pingPongRacket.gif",
+            "creationDate": "23/11/2016"
         },
         {
             "id": 19,
             "name": "Trampoline",
             "description": "100% garenteed fun and protected non-stop jumping experience",
             "price": 499,
-            "imgUrl": "trampoline.gif"
+            "imgUrl": "trampoline.gif",
+            "creationDate": "23/11/2016"
         },
         {
             "id": 20,
             "name": "Trampoline2",
             "description": "100% garenteed fun and protected non-stop jumping experience",
             "price": 599,
-            "imgUrl": "trampoline2.gif"
+            "imgUrl": "trampoline2.gif",
+            "creationDate": "23/11/2016"
         }
     ]
 }

@@ -1,14 +1,23 @@
 <div>
+    <!--Add/Filter Buttons-->
+    <button (click)="add($event)">Add</button>
+    <input value="Filter...">
+
+    <!--List Of Products:-->
     <ul>
-        <li *ngFor="let product of products" (click)="select(product)">
+        <li *ngFor="let product of products | async" (click)="select(product)">
             {{ product.name }} 
         </li>
     </ul>
 </div>
 
-<div>
-    <my-product *ngIf="selectedProduct" [product]="selectedProduct"></my-product>
+<div *ngIf="selectedProduct"> 
+    <!--The Selected Product: -->
+    <my-product [product]="selectedProduct"> </my-product>
+    <button (click)="clearSelection()">Clear Selection</button>
 </div>
+
+
 
 
 <div class="error" *ngIf="errorMessage">{{errorMessage}}</div>

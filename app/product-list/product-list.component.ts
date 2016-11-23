@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
 
 import { ProductService } from './../product/product.service';
 import { Product } from './../product/product.model';
@@ -14,22 +15,27 @@ export class ProductListComponent {
 
   errorMessage: string;
   selectedProduct: Product;
-  products: Product[];
+  products: Observable<Product[]>;
 
   constructor(private productService: ProductService) { }
 
   getProducts() {
-    this.productService.getProducts()
-      .subscribe(
-        products => this.products = products,
-        error =>  this.errorMessage = <any>error
-        );
+    this.products = this.productService.getProducts();
   }
 
   ngOnInit() { this.getProducts(); }
 
+  // events:
   select(product: Product) {
     this.selectedProduct = product;
+  }
+
+  clearSelection(){
+    this.selectedProduct = null;
+  }
+
+  add(event: Event){
+    console.log('==========> Need to Implement Adding a Product');
   }
 
 }
