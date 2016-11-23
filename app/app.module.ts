@@ -4,18 +4,22 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { ProductListComponent } from './product-list/product-list.component';
-import { ProductComponent } from './product/product.component';
 import { ProductService } from './product/product.service';
 
+import { AppRoutingModule, routableComponents} from './app-routing.module';
+
 @NgModule({
-  imports: [BrowserModule, FormsModule, HttpModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    AppRoutingModule
+    ],
   declarations: [
     AppComponent,
-    ProductComponent,
-    ProductListComponent
+    routableComponents
   ],
   bootstrap: [AppComponent],
-  providers: [ProductService] 
+  providers: [ProductService]
 })
 export class AppModule { }
