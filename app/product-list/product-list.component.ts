@@ -5,7 +5,7 @@ import { Product } from './../product/product.model';
 
 @Component({
     moduleId: module.id,
-    selector: 'product-list',
+    selector: 'my-product-list',
     templateUrl: 'product-list.component.html',
     styleUrls: ['product-list.component.css']
 })

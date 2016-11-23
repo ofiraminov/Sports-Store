@@ -1,1 +1,16 @@
-<!--component html goes here -->
+<div>
+    <ul>
+        <li *ngFor="let product of products" (click)="select(product)">
+            {{ product.name }} 
+        </li>
+    </ul>
+</div>
+
+<div>
+    <my-product *ngIf="selectedProduct" [product]="selectedProduct"></my-product>
+</div>
+
+
+<div class="error" *ngIf="errorMessage">{{errorMessage}}</div>
+
+

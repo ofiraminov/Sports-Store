@@ -11,8 +11,7 @@ export class ProductService {
   constructor(private http: Http) { }
 
   getProducts() {
-    return this.http
-      .get('api/products.json')
+    return this.http.get('app/api/products.json')
       .map((response: Response) => <Product[]>response.json().data)
       .catch(this.handleError);
   }

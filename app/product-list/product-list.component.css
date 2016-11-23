@@ -1,1 +1,20 @@
-// component css goes here
+ul{
+    list-style-type: none;
+}
+li {
+    cursor: pointer;
+}
+
+li:hover{
+    color: red;
+}
+
+div{
+    float: left;
+    width:250px;
+    height: 400px;
+    margin: 10px 10px;
+    padding: 10px 5px;
+    border: 2px solid slategrey;
+    border-radius: 10px;
+}

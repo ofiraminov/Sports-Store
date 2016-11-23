@@ -1,1 +1,7 @@
-<!--component html goes here -->
+<h3>You Selected {{ product.name }}</h3>
+<p>
+    <b>Price: </b> {{ product.price }}$ <br>
+    <b>Description: </b> {{ product.description }} <br>
+</p>
+<br>
+<img [src]= "'app/img/'+product.imgUrl">
