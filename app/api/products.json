@@ -18,7 +18,7 @@
         },
         {
             "id": 13,
-            "name": "BasketBall",
+            "name": "Basket Ball Spalding",
             "description": "Spalding TF-33 Professional basketball",
             "price": 199,
             "imgUrl": "basketBall.gif",
@@ -26,7 +26,7 @@
         },
         {
             "id": 14,
-            "name": "BasketBall2",
+            "name": "Basket Ball Molten",
             "description": "Molten 365 Professional basketball",
             "price": 99,
             "imgUrl": "basketBall2.gif",
@@ -34,7 +34,7 @@
         },
         {
             "id": 15,
-            "name": "BasketNet",
+            "name": "Basket Net",
             "description": "Net for any basket outdoor and indoor",
             "price": 39,
             "imgUrl": "basketNet.gif",
@@ -42,7 +42,7 @@
         },
         {
             "id": 16,
-            "name": "TennisRacket",
+            "name": "Tennis Racket",
             "description": "Professional Wilson Tennis Racket to fit your practices and competitions",
             "price": 599,
             "imgUrl": "tennisRacket.gif",
@@ -50,7 +50,7 @@
         },
         {
             "id": 17,
-            "name": "TennisRacket2",
+            "name": "Tennis Racket Penn",
             "description": "Professional Penn Tennis Racket to fit your practices and competitions",
             "price": 499,
             "imgUrl": "tennisRacket2.gif",
@@ -58,7 +58,7 @@
         },
         {
             "id": 18,
-            "name": "PingPongRacket",
+            "name": "Ping Pong Racket",
             "description": "Professional Ping Pong Racket to fit your practices and competitions",
             "price": 499,
             "imgUrl": "pingPongRacket.gif",
@@ -74,7 +74,7 @@
         },
         {
             "id": 20,
-            "name": "Trampoline2",
+            "name": "Trampoline Ultra",
             "description": "100% garenteed fun and protected non-stop jumping experience",
             "price": 599,
             "imgUrl": "trampoline2.gif",

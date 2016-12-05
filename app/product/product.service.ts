@@ -1,24 +1,53 @@
-import { AppModule } from './../app.module';
 import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
+
+import 'rxjs/operator/find';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/observable/throw';
+import 'rxjs/add/observable/throw';
+import 'rxjs/Rx';
 
 import { Product } from './product.model';
 
-let productsUrl = 'api/products.json';
+let productsUrl = 'app/api/products.json';
 
 @Injectable()
 export class ProductService {
   constructor(private http: Http) { }
 
-  getProducts() {
-    return this.http.get('app/api/products.json')
+  getProducts(): Observable<Product[]> {
+    console.log('=S=E=R=V=I=C=E==> Getting the Products now');
+
+    let products = this.http.get(productsUrl)
       .map((res: Response) => <Product[]>res.json().data)
       .catch(this.handleError);
+
+    let i = 5;
+    i++;
+
+
+    return products;
   }
+
+  getProduct(id: number): Observable<Product> {
+    console.log('=S=E=R=V=I=C=E==> Getting the Product Number ' + id);
+    let p = this.getProducts()
+      .flatMap(products => products)
+      .find(product => product.id === +id)
+      .catch(this.handleError);
+
+    console.log('=S=E=R=V=I=C=E==> Returning the Product Number ' + id + " And p is: "+ p);
+
+    return p;
+  }
+
+
+
+
+//------------------------------------------------------------------
+
 
   addProduct(product: Product) {
     let body = JSON.stringify(Product);

@@ -8,8 +8,11 @@
     <h3>Router Demo</h3>
     <nav>
       <ul>
-        <li><a [routerLink]="['/products']" href="">Products</a></li>
-        <li><a [routerLink]="['/product']" href="">Product</a></li>
+        <li><a [routerLink]="['']">Home</a></li>
+        <li><a [routerLink]="['/products']"  >Products</a></li>
+        <li><a [routerLink]="['/products', 11]"  >Product # 1</a></li>
+        <li><a [routerLink]="['/products', 12]"  >Product # 2</a></li>
+        <li><a [routerLink]="['/products', 13]"  >Product # 3</a></li>
       </ul>
     </nav>
   </header>

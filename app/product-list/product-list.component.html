@@ -6,7 +6,12 @@
     <!--List Of Products:-->
     <ul>
         <li *ngFor="let product of products | async" (click)="select(product)">
-            {{ product.name }} 
+            <img [src]="'app/img/' + product.imgUrl">
+            <span>
+                {{ product.name }} <br>
+                Description: {{ product.description }}
+                <button>delete</button>
+            </span>
         </li>
     </ul>
 </div>
