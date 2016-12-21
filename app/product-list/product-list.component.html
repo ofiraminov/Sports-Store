@@ -1,11 +1,14 @@
 <div>
     <!--Add/Filter Buttons-->
     <button (click)="add($event)">Add</button>
-    <input value="Filter...">
-
+    <span class='blue'>
+        Filter
+        <input [(ngModel)]='filterText'>
+    </span>
+        
     <!--List Of Products:-->
     <ul>
-        <li *ngFor="let product of products | async" (click)="select(product)">
+        <li *ngFor="let product of products | async | productFilter :filterText" (click)="select(product)">
             <img [src]="'app/img/' + product.imgUrl">
             <span>
                 {{ product.name }} <br>

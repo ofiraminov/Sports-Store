@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { ProductService } from './product/product.service';
+import { ProductFilterPipe } from './product/product-filter.pipe';
 
 import { AppRoutingModule, routableComponents} from './app-routing.module';
 
@@ -17,7 +18,8 @@ import { AppRoutingModule, routableComponents} from './app-routing.module';
     ],
   declarations: [
     AppComponent,
-    routableComponents
+    routableComponents, 
+    ProductFilterPipe
   ],
   bootstrap: [AppComponent],
   providers: [ProductService]

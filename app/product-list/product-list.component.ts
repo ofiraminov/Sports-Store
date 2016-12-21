@@ -17,6 +17,7 @@ export class ProductListComponent implements OnInit {
   errorMessage: string;
   selectedProduct: Product;
   products: Observable<Product[]>;
+  filterText: string = "";
 
   constructor(private productService: ProductService) { }
 
